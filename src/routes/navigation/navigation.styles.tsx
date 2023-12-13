@@ -25,3 +25,14 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
         padding: 10px 15px;
         cursor: pointer;`;
+
+export const NavButton = styled.button`
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+	font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	padding: 10px 15px;
+	cursor: pointer;`;
