@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import ProductCard from '../product-card/product-card.component';
-import { CategoryPreviwContainer, Title, Preview } from './category-preview.styles';
+import { CategoryPreviewContainer, Title, Preview } from './category-preview.styles';
 import { CategoryItem } from '../../store/categories/category.types';
 
 type CategoryPreviewProps = {
@@ -11,7 +11,7 @@ type CategoryPreviewProps = {
 
 const CategoryPreview: FC<CategoryPreviewProps> = ({ title, products }) => {
 	return (
-		<CategoryPreviwContainer>
+		<CategoryPreviewContainer>
 			<h2>
 				<Title to={title}>{title.toUpperCase()}</Title>
 			</h2>
@@ -20,7 +20,7 @@ const CategoryPreview: FC<CategoryPreviewProps> = ({ title, products }) => {
 					.filter((_, index) => index < 4)
 					.map((product) => <ProductCard key={product.id} product={product} />)}
 			</Preview>
-		</CategoryPreviwContainer>
+		</CategoryPreviewContainer>
 	);
 };
 

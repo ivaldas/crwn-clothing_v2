@@ -30,11 +30,35 @@ export const Body = styled.div`
 		font-size: 22px;
 		color: #4a4a4a;
 		text-transform: uppercase;
+		@media screen and (max-width: 420px) {
+			font-size: 1em;
+		}
+		@media screen and (max-width: 343px) {
+			font-size: 0.8em;
+		}
 	}
 
 	p {
 		font-weight: lighter;
 		font-size: 16px;
+		@media screen and (max-width: 420px) {
+			font-size: 1em;
+		}
+		@media screen and (max-width: 343px) {
+			font-size: 0.8em;
+			margin: 0;
+			padding: 5px 50px;
+		}
+	@media screen and (max-width: 502px) {
+		font-size: 1em;
+	}
+	}
+
+	@media screen and (max-width: 630px) {
+		width: 25%;
+	}
+	@media screen and (max-width: 502px) {
+		padding: 5px;
 	}
 `;
 
@@ -48,6 +72,14 @@ export const DirectoryItemContainer = styled.div`
 	border: 1px solid black;
 	margin: 0 7.5px 15px;
 	overflow: hidden;
+
+	&:first-child {
+		margin-right: 7.5px;
+	}
+
+	&:last-child {
+		margin-left: 7.5px;
+	}
 
 	&:hover {
 		cursor: pointer;
@@ -66,11 +98,7 @@ export const DirectoryItemContainer = styled.div`
 		height: 380px;
 	} */
 
-	&:first-child {
-		margin-right: 7.5px;
-	}
-
-	&:last-child {
-		margin-left: 7.5px;
+	@media screen and (max-width: 800px) {
+		height: 200px;
 	}
 `;
